@@ -12,5 +12,5 @@ Mostro finale da sconfiggere.
 Deserto, Foresta, Grotta, Cimitero
 
 
-### TO IMPLEMENT
-#### ACTIONS
+## TO IMPLEMENT
+### ACTIONS

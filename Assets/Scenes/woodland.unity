@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 28030962}
   m_Layer: 0
   m_Name: 11
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -333,10 +333,10 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!4 &81668243
@@ -1560,7 +1560,7 @@ GameObject:
   - component: {fileID: 506957547}
   m_Layer: 0
   m_Name: 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1902,7 +1902,7 @@ GameObject:
   - component: {fileID: 755565150}
   m_Layer: 0
   m_Name: 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2237,7 +2237,7 @@ GameObject:
   - component: {fileID: 879322990}
   m_Layer: 0
   m_Name: 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2396,7 +2396,7 @@ GameObject:
   - component: {fileID: 1050909415}
   m_Layer: 0
   m_Name: 2 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2502,7 +2502,7 @@ GameObject:
   - component: {fileID: 1088693917}
   m_Layer: 0
   m_Name: 2 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2924,7 +2924,7 @@ GameObject:
   - component: {fileID: 1198183793}
   m_Layer: 0
   m_Name: 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3029,7 +3029,7 @@ GameObject:
   - component: {fileID: 1204062743}
   m_Layer: 0
   m_Name: 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3187,7 +3187,7 @@ GameObject:
   - component: {fileID: 1206867701}
   m_Layer: 0
   m_Name: 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4894,7 +4894,7 @@ GameObject:
   - component: {fileID: 2020204120}
   m_Layer: 0
   m_Name: 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

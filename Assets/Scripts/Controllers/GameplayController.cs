@@ -14,7 +14,6 @@ public class GameplayController : MonoBehaviour
 
     void Awake() {
         makeInstance();
-
         scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
         lifeText = GameObject.Find("LifeText").GetComponent<Text>();
     }
@@ -32,8 +31,8 @@ public class GameplayController : MonoBehaviour
 
     public void decrementLife() {
         lifeScore--;
-        //if(lifeScore >= 0) {
-            lifeText.text = lifeScore.ToString();
-        //}
+        // if(lifeScore >= 0) {
+        lifeText.text = lifeScore.ToString();
+        // }
     }
 }

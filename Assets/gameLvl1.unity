@@ -773,7 +773,7 @@ PrefabInstance:
     - target: {fileID: 4386294392328338200, guid: 3ffdcd562354b5e4c90b22ff9d2b73b3,
         type: 3}
       propertyPath: m_Name
-      value: Enemy (1)
+      value: Ragno (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4386294392328338279, guid: 3ffdcd562354b5e4c90b22ff9d2b73b3,
         type: 3}
@@ -12977,7 +12977,7 @@ PrefabInstance:
     - target: {fileID: 4386294392328338200, guid: 3ffdcd562354b5e4c90b22ff9d2b73b3,
         type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Ragno
       objectReference: {fileID: 0}
     - target: {fileID: 4386294392328338279, guid: 3ffdcd562354b5e4c90b22ff9d2b73b3,
         type: 3}

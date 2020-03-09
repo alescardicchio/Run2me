@@ -20,9 +20,10 @@ public class PlayerScore : MonoBehaviour
             Debug.Log("Diamante raccolto!");
             target.gameObject.SetActive(false); // Quando il player 'tocca' il diamante, questo viene rimosso dalla scena.
         }
-        // Verifica se il player è a contatto con un nemico.
+        // Verifica se il player è entrato a contatto con un nemico.
         if(target.tag == "Enemy") {
             GameplayController.instance.decrementLife(); // DA CAMBIARE!
+            Debug.Log("Vita persa!");
             isAlive = false;
             transform.position = new Vector3(0, 100000, 0);
         }

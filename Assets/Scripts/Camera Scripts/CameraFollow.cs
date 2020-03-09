@@ -7,7 +7,7 @@ public class CameraFollow : MonoBehaviour
     
     private GameObject player;
     private PlayerScore playerScore;
-    private float minX = 0f, maxX = 71.5f, minY = 0f;
+    private float minX = 0f, maxX = 143.4f, minY = 0f;
     
     void Start() {
         player = GameObject.Find("Player");

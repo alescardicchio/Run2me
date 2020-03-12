@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/gameLvl1.unity
+    guid: 1f93bc2159738c24fbce592b1ea76d45
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 5d29e5f35cafc6b4cb8681d9b43ad599
+  - enabled: 1
+    path: Assets/Scenes/WinterLand.unity
+    guid: bd9357235c1439f4aab4dff4c20d7f2d
+  - enabled: 1
+    path: Assets/Scenes/woodland.unity
+    guid: 63af822ee4cf6d644a677216b8e3037a
   m_configObjects: {}

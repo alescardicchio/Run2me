@@ -32,6 +32,7 @@ public class PlayerScore : MonoBehaviour
         if (target.tag == "Collectable")
         {
             GameplayController.instance.incrementScore(); // Incrementa di 1 i diamanti raccolti.
+            FindObjectOfType<AudioManager>().Play("Diamante");
             Debug.Log("Diamante raccolto!");
             target.gameObject.SetActive(false); // Quando il player 'tocca' il diamante, questo viene rimosso dalla scena.
         }

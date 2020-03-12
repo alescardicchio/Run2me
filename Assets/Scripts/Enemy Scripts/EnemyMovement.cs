@@ -8,33 +8,41 @@ public class EnemyMovement : MonoBehaviour
     public bool walkLeft;
 
 
-    void Start() {
+    void Start()
+    {
         StartCoroutine(changeDirection());
     }
 
-    
-    void Update() {
+
+    void Update()
+    {
         enemyWalk();
     }
 
-    private void enemyWalk() {
+    private void enemyWalk()
+    {
         Vector3 temp = transform.position;
         Vector3 tempScale = transform.localScale;
-        if(walkLeft) {
+        if (walkLeft)
+        {
             temp.x -= walkSpeed * Time.deltaTime;
-            tempScale.x = Mathf.Abs(tempScale.x);   
-        } else {
+            tempScale.x = Mathf.Abs(tempScale.x);
+        }
+        else
+        {
             temp.x += walkSpeed * Time.deltaTime;
-            tempScale.x = -Mathf.Abs(tempScale.x);  
+            tempScale.x = -Mathf.Abs(tempScale.x);
         }
 
         transform.position = temp;
         transform.localScale = tempScale;
     }
 
-    IEnumerator changeDirection() {
+    IEnumerator changeDirection()
+    {
         yield return new WaitForSeconds(3.5f);    // Attende un tempo pari a 3 secondi.
         walkLeft = !walkLeft;   // Cambia direzione.
         StartCoroutine(changeDirection());
     }
 }
+

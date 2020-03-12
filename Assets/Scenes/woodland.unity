@@ -2646,7 +2646,7 @@ RectTransform:
   - {fileID: 1852500357}
   - {fileID: 535606694}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3156,6 +3156,75 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &167647952
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5381422749062527152, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.196958
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381422749062527152, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.9054024
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381422749062527152, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.10659201
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381422749062527152, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381422749062527152, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381422749062527152, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381422749062527152, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381422749062527152, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381422749062527152, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381422749062527152, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381422749062527152, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381422749062527154, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 649e27d84fc665f40b439705ffd7987b, type: 3}
 --- !u!1 &169258919
 GameObject:
   m_ObjectHideFlags: 0
@@ -4231,7 +4300,7 @@ PrefabInstance:
     - target: {fileID: 1209125885452948438, guid: a14f3297a1b53a84e969902aacdad5e4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1209125885452948438, guid: a14f3297a1b53a84e969902aacdad5e4,
         type: 3}
@@ -16180,7 +16249,7 @@ Transform:
   m_Children:
   - {fileID: 789576701}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &864952478
 Animator:
@@ -31472,7 +31541,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1671872432
 Animator:
@@ -32141,7 +32210,7 @@ Transform:
   - {fileID: 1362569228}
   - {fileID: 45842251}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1691986554
 SpriteRenderer:
@@ -36886,7 +36955,7 @@ RectTransform:
   - {fileID: 968804482}
   - {fileID: 1686877091}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

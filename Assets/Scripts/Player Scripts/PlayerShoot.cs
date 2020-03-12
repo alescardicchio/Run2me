@@ -26,6 +26,7 @@ public class PlayerShoot : MonoBehaviour
     public void playerShoot(bool shooting) {
         if(shooting) {
             Instantiate(bullet, firePoint.position, firePoint.rotation);
+            FindObjectOfType<AudioManager>().Play("Shoot");
             anim.SetBool("Shoot", true);    
             //StartCoroutine(ExecuteAfterTime(0.03f));
         }

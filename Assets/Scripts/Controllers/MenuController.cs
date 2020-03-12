@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
     public void PlayGame() {
+        GameManager.instance.playerDied_GameRestarted = false;
         SceneManager.LoadScene("gameLvl1");
     }
 }

@@ -54,7 +54,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2054268336341432393
 Transform:
   m_ObjectHideFlags: 0
@@ -222,8 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236d709885ef95842b9869243464aaed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 30
-  maxVelocity: 4
   joystick: {fileID: 0}
 --- !u!114 &2054268336341432398
 MonoBehaviour:

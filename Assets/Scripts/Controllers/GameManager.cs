@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public int score;
     public int lifeScore;
     public bool playerDied_GameRestarted;
-
+    public GameObject tutorial;
 
     void Awake() {
         MakeSingleton();

@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float runSpeed = 30f, maxVelocity = 4f;
+    private float runSpeed = 4f; 
+    //public float maxVelocity = 4f;
     private float jumpForce = 350f;
     private bool isGrounded = false;    // Questa variabile consentirà di stabilire se il giocatore dopo aver saltato la prima volta ha toccato terra, evitando così che continui a saltare quando è già sospeso in aria.
     private bool facingRight = true;
@@ -21,32 +22,34 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         playerMove();
         playerJump();
     }
 
     private void playerMove() {
-        float forceX = 0f;
-        float velocity = Mathf.Abs(playerBody.velocity.x);
+        //float forceX = 0f;
+        //float velocity = Mathf.Abs(playerBody.velocity.x);
 
-        //float horizontalMove = Input.GetAxisRaw("Horizontal");
+        //  float horizontalMove = Input.GetAxisRaw("Horizontal");
         float horizontalMove = joystick.Horizontal;
 
         if(horizontalMove > .4f) {
-            if(velocity < maxVelocity) {
-                forceX = runSpeed;
-            }
+            //if(velocity < maxVelocity) {
+                //forceX = runSpeed;
+                playerBody.velocity = new Vector2(runSpeed, playerBody.velocity.y);
+            //}
             if(!facingRight) {
                 playerFlip();
             }
             anim.SetBool ("Run", true);
 
         } else if(horizontalMove < -.4f) {
-            if(velocity < maxVelocity) {
-                forceX = -runSpeed;
-            }
+            //if(velocity < maxVelocity) {
+              //  forceX = -runSpeed;
+              playerBody.velocity = new Vector2(-runSpeed, playerBody.velocity.y);
+            //}
             if(facingRight) {
                 playerFlip();
             }
@@ -57,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("Run", false);
         }
 
-        playerBody.AddForce(new Vector2(forceX, 0));
+        //playerBody.AddForce(new Vector2(forceX, 0));
     }
 
 

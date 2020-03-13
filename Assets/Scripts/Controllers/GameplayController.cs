@@ -73,6 +73,9 @@ public class GameplayController : MonoBehaviour
         StartCoroutine(playerDied());
     }
 
+    public GameObject boy;
+    public GameObject girl;
+    
     IEnumerator playerDied() {
         yield return new WaitForSeconds(1.5f);
         // Non abbiamo più vite, game over :
@@ -85,6 +88,6 @@ public class GameplayController : MonoBehaviour
             GameManager.instance.score = 0;
             GameManager.instance.lifeScore = lifeScore;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+       }
     }
 }

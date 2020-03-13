@@ -10,7 +10,7 @@ public class CameraFollow : MonoBehaviour
     private float minX = 0f, maxX = 143.4f, minY = 0f;
     
     void Start() {
-        player = GameObject.Find("Player");
+        player = GameObject.FindWithTag("Player");
         playerScore = player.GetComponent<PlayerScore>();
     }
 

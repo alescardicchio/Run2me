@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float walkSpeed = 2f;
+    public float walkSpeed = 1.5f;
     public bool walkLeft;
 
 

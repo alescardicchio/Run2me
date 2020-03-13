@@ -30,7 +30,7 @@ public class GameplayController : MonoBehaviour
             colorModifier += Time.deltaTime;
     }*/
 
-    void OnEnable() {
+    /*void OnEnable() {
         SceneManager.sceneLoaded += levelFinishedLoading;
     }
 
@@ -50,7 +50,7 @@ public class GameplayController : MonoBehaviour
             scoreText.text = score.ToString();
             lifeText.text = lifeScore.ToString();
         }
-    }
+    }*/
 
     private void makeInstance() {
         if(instance == null) {

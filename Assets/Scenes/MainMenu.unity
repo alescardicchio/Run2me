@@ -1474,6 +1474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1084299718}
+  - component: {fileID: 1084299719}
   m_Layer: 5
   m_Name: Options Menu
   m_TagString: Untagged
@@ -1503,6 +1504,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1084299719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084299717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0544587b0314c37488694a42fa0ff74e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 8672e14124780af4c91b3834c522d9aa, type: 2}
 --- !u!1 &1120916024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,10 +1599,21 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.6
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1084299719}
+        m_MethodName: SetVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1141579094
 GameObject:
   m_ObjectHideFlags: 0
@@ -1807,6 +1832,7 @@ MonoBehaviour:
   score: 0
   lifeScore: 0
   playerDied_GameRestarted: 0
+  tutorial: {fileID: 0}
 --- !u!4 &1249450747
 Transform:
   m_ObjectHideFlags: 0
@@ -1828,6 +1854,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2439654733865111212, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: mixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 8672e14124780af4c91b3834c522d9aa,
+        type: 2}
+    - target: {fileID: 2439654733865111212, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439654733865111212, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: sounds.Array.data[0].volumeVariance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5381422749062527152, guid: 649e27d84fc665f40b439705ffd7987b,
         type: 3}
       propertyPath: m_LocalPosition.x

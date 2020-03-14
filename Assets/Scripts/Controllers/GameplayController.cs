@@ -73,9 +73,6 @@ public class GameplayController : MonoBehaviour
         StartCoroutine(playerDied());
     }
 
-    public GameObject boy;
-    public GameObject girl;
-    
     IEnumerator playerDied() {
         yield return new WaitForSeconds(1.5f);
         // Non abbiamo più vite, game over :

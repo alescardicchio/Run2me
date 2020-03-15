@@ -1832,7 +1832,6 @@ MonoBehaviour:
   score: 0
   lifeScore: 0
   playerDied_GameRestarted: 0
-  tutorial: {fileID: 0}
 --- !u!4 &1249450747
 Transform:
   m_ObjectHideFlags: 0

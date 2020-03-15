@@ -71,6 +71,7 @@ public class PlayerScore : MonoBehaviour
         // Verifica se il player ha raggiunto l'uscita.
         if(target.tag == "Exit") {
             //Time.timeScale = 0f;
+            GameManager.instance.score = GameplayController.instance.score;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }

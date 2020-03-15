@@ -9,8 +9,8 @@ public class GameplayController : MonoBehaviour
     public static GameplayController instance;
     private Text scoreText;
     private Text lifeText;
-    private int score;
-    private int lifeScore;
+    public int score;
+    public int lifeScore;
     
     //float colorModifier = 1.0f;
 
@@ -39,8 +39,9 @@ public class GameplayController : MonoBehaviour
     }
 
     void levelFinishedLoading(Scene scene, LoadSceneMode mode) {
-        if(scene.name != "MainMenu") {  // Se la scena non è il menu iniziale, dunque ci troviamo in uno dei livelli del gioco.
-            if(!GameManager.instance.playerDied_GameRestarted) { // E' il primo avvio del gioco, quindi il giocatore avrà 0 diamanti e 3 vite iniziali.
+        if(scene.name != "MainMenu") {  // Se la scena non è il menu iniziale ci troviamo in uno dei livelli del gioco.
+            if(!GameManager.instance.playerDied_GameRestarted) { 
+                // E' il primo avvio del gioco e ci troviamo nel livello iniziale, il giocatore avrà 0 diamanti e 3 vite.
                 score = 0;
                 lifeScore = 3;
             } else {    // Il player e' morto almeno una volta

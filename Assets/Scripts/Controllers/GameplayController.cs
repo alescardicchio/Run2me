@@ -11,24 +11,16 @@ public class GameplayController : MonoBehaviour
     private Text lifeText;
     public int score;
     public int lifeScore;
+
+    public GameObject GameOverUI;
+    public GameObject TouchscreenUI;
     
-    //float colorModifier = 1.0f;
-
-
+   
     void Awake() {
         makeInstance();
         scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
         lifeText = GameObject.Find("LifeText").GetComponent<Text>();
     }
-
-    //Per modificare il colore... modificare o eliminare
-    /*private void modeColor()
-    {
-        SpriteRenderer sprRend = gameObject.AddComponent<SpriteRenderer>() as SpriteRenderer;
-        sprRend.color = new Color(0.9f, 0.9f, 0.9f, 1.0f);
-        if (colorModifier < 1.0f)
-            colorModifier += Time.deltaTime;
-    }*/
 
     void OnEnable() {
         SceneManager.sceneLoaded += levelFinishedLoading;
@@ -66,8 +58,6 @@ public class GameplayController : MonoBehaviour
 
     public void decrementLife() {
         lifeScore--;
-        //modeColor();
-        //colorModifier = 0.0f;
         if (lifeScore >= 0) {
             lifeText.text = lifeScore.ToString();
         }
@@ -79,9 +69,10 @@ public class GameplayController : MonoBehaviour
         // Non abbiamo più vite, game over :
         if(lifeScore == 0) {
                 // ==> SI POTREBBE IMPLEMENTARE UNA SCRITTA OPPURE UN AUDIO 'GAME-OVER' !
-            SceneManager.LoadScene("MainMenu");
+            GameOverUI.SetActive(true);
+            TouchscreenUI.SetActive(false);
         } else {
-            // Il player e' morto ma ha comunque delle vite rimanenti :
+            // Il player è morto ma ha comunque delle vite rimanenti :
             GameManager.instance.playerDied_GameRestarted = true;
             GameManager.instance.score = 0;
             GameManager.instance.lifeScore = lifeScore;

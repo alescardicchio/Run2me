@@ -8,15 +8,6 @@ public class TutorialController : MonoBehaviour
     public GameObject touchscreenMenu;
     public GameObject scoreMenu;
 
-    void Start() {
-        if(!GameManager.instance.playerDied_GameRestarted) {
-            startTutorial();
-        }
-        else {
-            tutorialMenu.SetActive(false);
-        }
-    }
-
     public void startTutorial() {
         tutorialMenu.SetActive(true);
         touchscreenMenu.SetActive(false);

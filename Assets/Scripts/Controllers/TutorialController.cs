@@ -21,10 +21,6 @@ public class TutorialController : MonoBehaviour
         tutorialMenu.SetActive(true);
         touchscreenMenu.SetActive(false);
     }
-
-    public void show2ND_DiamondsLives() {
-
-    }
   
     public void show3RD_JoystickShootPause() {
         touchscreenMenu.SetActive(true);

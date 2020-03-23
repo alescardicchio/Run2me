@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 public class GameOverController : MonoBehaviour
 {
 
-    public GameObject TutorialUI;
-
     public void Quit() {
         Application.Quit();
         // DA QUI POTREBBE ANDARE AL MENU IN CUI SALVA LE STATS DELLA PARTITA..
@@ -16,6 +14,5 @@ public class GameOverController : MonoBehaviour
     public void Retry() {
         SceneManager.LoadScene("gameLvl1");
         GameManager.instance.playerDied_GameRestarted = false;
-        TutorialUI.SetActive(false);
     }
 }

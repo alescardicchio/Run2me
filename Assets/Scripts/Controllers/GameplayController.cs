@@ -68,6 +68,7 @@ public class GameplayController : MonoBehaviour
         // Non abbiamo più vite, game over :
         if(lifeScore == 0) {
             // => Si potrebbe inserire anche un audio 'GameOver' 
+            FindObjectOfType<AudioManager>().Play("GameOver");
             GameOverUI.SetActive(true);
             TouchscreenUI.SetActive(false);
         } else {

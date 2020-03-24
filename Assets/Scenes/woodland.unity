@@ -11855,6 +11855,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   lifeScore: 0
+  GameOverUI: {fileID: 0}
+  TouchscreenUI: {fileID: 0}
 --- !u!4 &548519399
 Transform:
   m_ObjectHideFlags: 0
@@ -28561,6 +28563,16 @@ PrefabInstance:
       propertyPath: walkSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2849922843687593394, guid: ad8afd04343e110438bbff6d504ee65e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.17826974
+      objectReference: {fileID: 0}
+    - target: {fileID: 2849922843687593394, guid: ad8afd04343e110438bbff6d504ee65e,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2.3134272
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114720446423266532, guid: ad8afd04343e110438bbff6d504ee65e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ad8afd04343e110438bbff6d504ee65e, type: 3}
@@ -44709,6 +44721,21 @@ PrefabInstance:
         type: 3}
       propertyPath: walkLeft
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2849922843687593394, guid: ad8afd04343e110438bbff6d504ee65e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.22842199
+      objectReference: {fileID: 0}
+    - target: {fileID: 2849922843687593394, guid: ad8afd04343e110438bbff6d504ee65e,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2.300327
+      objectReference: {fileID: 0}
+    - target: {fileID: 2849922843687593394, guid: ad8afd04343e110438bbff6d504ee65e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -1.1712492
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114720446423266532, guid: ad8afd04343e110438bbff6d504ee65e, type: 3}

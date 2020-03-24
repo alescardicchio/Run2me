@@ -72,3 +72,12 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
+  - name: GameOver
+    clip: {fileID: 8300000, guid: 1b5a57375389f4244be835e7be00d341, type: 3}
+    volume: 0.824
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}

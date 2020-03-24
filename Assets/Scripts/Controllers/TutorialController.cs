@@ -9,7 +9,7 @@ public class TutorialController : MonoBehaviour
     public GameObject scoreMenu;
 
     void Start() {
-        if(!GameManager.instance.playerDied_GameRestarted) {
+        if(!GameManager.instance.playerDied_GameRestarted && !GameManager.instance.tutorialDone) {
             startTutorial();
         }
         else {
@@ -20,6 +20,7 @@ public class TutorialController : MonoBehaviour
     public void startTutorial() {
         tutorialMenu.SetActive(true);
         touchscreenMenu.SetActive(false);
+        GameManager.instance.tutorialDone = true;
     }
   
     public void show3RD_JoystickShootPause() {

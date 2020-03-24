@@ -23,7 +23,7 @@ public class PauseController : MonoBehaviour
 
     public void QuitGame() {
         Debug.Log("Quitting");
-        //Application.Quit();
+        Application.Quit();
         UnityEditor.EditorApplication.isPlaying = false;
     }
 }

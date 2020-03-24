@@ -57,8 +57,6 @@ public class GameplayController : MonoBehaviour
 
     public void decrementLife() {
         lifeScore--;
-        //modeColor();
-        //colorModifier = 0.0f;
         if (lifeScore >= 0) {
             lifeText.text = lifeScore.ToString();
         }
@@ -66,9 +64,10 @@ public class GameplayController : MonoBehaviour
     }
 
     IEnumerator playerDied() {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.2f);
         // Non abbiamo più vite, game over :
         if(lifeScore == 0) {
+            // => Si potrebbe inserire anche un audio 'GameOver' 
             GameOverUI.SetActive(true);
             TouchscreenUI.SetActive(false);
         } else {

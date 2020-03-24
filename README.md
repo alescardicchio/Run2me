@@ -1,29 +1,47 @@
 # Mobile-Computing
 Progetto di Mobile Computing
 
+## NOME DEL GIOCO!
+
 ### LEVELS
-Circa quattro livelli
+Tre livelli.
+(Forse il livello finale --> dipende da quanto durerà il video finale)
 
 ### HISTORY
 La ragazza salva il ragazzo. 
-Mostro finale da sconfiggere.
+Mostro finale da sconfiggere (forse).
 
 ### BACKGROUNDS
-Deserto, Foresta, Grotta, Cimitero
-
+Desert, WoodLand, WinterLand
 
 ## TO IMPLEMENT
 #### Obiettivo 1
-Inserire la girl e implementare l'azione di sparo/attacco.
-Touch.
-Migliorare la corsa e il salto.
-Cambiare/Allungare il livello del deserto.
+Al termine di ogni livello appare un piccolo menù con introduzione al livello successivo.
 Quando arriva alla fine si interrompe il gioco e deve uscire la schermata di "Passa al prossimo livello, torna indietro ecc...".
-Quando cade o incontra un nemico deve perdere le vite e non morire.
+Visualizzare anche le statistiche del livello con tempo di percorrenza, quanti diamanti ha preso, le vite perse ecc.
+
 #### Obiettivo 2
-Schermata iniziale: Titolo del gioco, Pulsante 'Play', Pulsante 'Options' dove regolare/disabilitare audio, vibrazione ecc., Pulsante 'Credits' dove verranno mostrati i nostri nomi.
-Scgermata per la selezione del personaggio, boy oppure girl, subito dopo aver premuto 'Play'.
+Morte del player.
+
+#### Obiettivo 3
 Narrazione introduttiva della storia.
-Tutorial iniziale.
-Menù per mettere il gioco in pausa oppure ricominciare da capo.
-Classifica finale con il punteggio ottenuto.
+
+#### Obiettivo 4
+Cambiare la musichetta ad ogni livello.
+
+#### Obiettivo 5
+Piattaforme che si muovono.
+
+#### Obiettivo 6
+Attacco del nemico.
+
+#### Obiettivo 7
+Memorizzare dati nel database.
+Nickname è la chiave o creare una chiave randomica.
+Nome, diamanti, score ecc.
+Quindi a ogni fine partita salvare i dati.
+Mostrare gli score di tutti i giocatori del gioco, non solo i miei.
+
+#### EXTRA
+Touch.
+Quando il giocatore tocca un nemico torna indietro e perde una vita. 

@@ -15,6 +15,7 @@ public class TrollDie : MonoBehaviour
     public void Die()
     {
         anim.SetBool("Die", true);
+        transform.gameObject.tag = "Untagged";
         Destroy(gameObject, 1.25f);
     }
 }

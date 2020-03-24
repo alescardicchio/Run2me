@@ -15,7 +15,11 @@ public class BulletMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D target) {
         if(target.tag == "Enemy") {
-            target.GetComponent<EnemyDie>().Die();  
+            target.GetComponent<EnemyDie>().Die();
+        }
+        if(target.tag == "Troll")
+        {
+            target.GetComponent<TrollDie>().Die();
         }
 
         Instantiate(impactEffect, transform.position, transform.rotation);

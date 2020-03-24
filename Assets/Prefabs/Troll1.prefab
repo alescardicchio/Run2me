@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 2849922843687593356}
   - component: {fileID: 2849922843687593359}
   - component: {fileID: 2849922843687593358}
-  - component: {fileID: 2849922843687593395}
   - component: {fileID: 2849922843687593357}
   - component: {fileID: 2849922843687593394}
   - component: {fileID: 2849922843687593392}
+  - component: {fileID: 114720446423266532}
   m_Layer: 0
   m_Name: Troll1
   m_TagString: Enemy
@@ -103,18 +103,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2849922843687593395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2849922843687593353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cba152bb9314aa348925cf8107fe57d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &2849922843687593357
 Rigidbody2D:
   serializedVersion: 4
@@ -166,3 +154,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 1.5
   walkLeft: 0
+--- !u!114 &114720446423266532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2849922843687593353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c3fa6bc7a4df943b9ad8a487787760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

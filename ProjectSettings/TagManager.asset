@@ -8,6 +8,7 @@ TagManager:
   - Collectable
   - Enemy
   - Exit
+  - Troll
   layers:
   - Default
   - TransparentFX

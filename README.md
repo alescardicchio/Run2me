@@ -44,4 +44,8 @@ Mostrare gli score di tutti i giocatori del gioco, non solo i miei.
 
 #### EXTRA
 Touch.
-Quando il giocatore tocca un nemico torna indietro e perde una vita. 
+-
+Quando il giocatore tocca un nemico torna indietro e perde una vita.
+-
+Per usare la pistola devi raccogliere o dei proiettili o un disegno di pistola. 
+Altrimenti prima per poter attaccare hai solamente il pugnale.

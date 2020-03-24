@@ -43,7 +43,7 @@ public class PlayerScore : MonoBehaviour
             target.gameObject.SetActive(false); // Quando il player 'tocca' il diamante, questo viene rimosso dalla scena.
         }
         //Se il player è entrato a contatto con un nemico:
-        if(target.tag == "Enemy") {
+        if(target.tag == "Enemy" || target.tag == "Troll") {
             if(isAlive) {
                 isAlive = false;    // Se il player tocca il nemico, muore.               
                 GameplayController.instance.decrementLife();

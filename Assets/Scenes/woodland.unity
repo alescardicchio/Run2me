@@ -13327,7 +13327,7 @@ PrefabInstance:
     - target: {fileID: 2054268336341432393, guid: 38de1f3eae05a484d8f555fd09ef576d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2054268336341432393, guid: 38de1f3eae05a484d8f555fd09ef576d,
         type: 3}
@@ -17674,7 +17674,7 @@ Transform:
   - {fileID: 1794787251}
   - {fileID: 229087199}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &869037364
 GameObject:
@@ -19751,7 +19751,7 @@ Transform:
   - {fileID: 1370840725}
   - {fileID: 804842853}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &992357728
 GameObject:
@@ -28400,6 +28400,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Troll1
       objectReference: {fileID: 0}
+    - target: {fileID: 2849922843687593353, guid: ad8afd04343e110438bbff6d504ee65e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Troll
+      objectReference: {fileID: 0}
     - target: {fileID: 2849922843687593356, guid: ad8afd04343e110438bbff6d504ee65e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28465,7 +28470,8 @@ PrefabInstance:
       propertyPath: walkSpeed
       value: 1.6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114720446423266532, guid: ad8afd04343e110438bbff6d504ee65e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ad8afd04343e110438bbff6d504ee65e, type: 3}
 --- !u!4 &1370840725 stripped
 Transform:
@@ -28484,6 +28490,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Troll1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2849922843687593353, guid: ad8afd04343e110438bbff6d504ee65e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Troll
       objectReference: {fileID: 0}
     - target: {fileID: 2849922843687593356, guid: ad8afd04343e110438bbff6d504ee65e,
         type: 3}
@@ -28550,7 +28561,8 @@ PrefabInstance:
       propertyPath: walkSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114720446423266532, guid: ad8afd04343e110438bbff6d504ee65e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ad8afd04343e110438bbff6d504ee65e, type: 3}
 --- !u!1 &1375099846
 GameObject:
@@ -33629,6 +33641,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
   m_EdgeRadius: 0
+--- !u!1 &1616594147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2849922843687593353, guid: ad8afd04343e110438bbff6d504ee65e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2849922843920209554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1616594148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616594147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d14ef48c49bdfd47a1f61415143c902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1620416930
 GameObject:
   m_ObjectHideFlags: 0
@@ -41097,7 +41127,7 @@ PrefabInstance:
     - target: {fileID: 8976546731202594536, guid: e052507120537a048b9cc3e91fd9ac69,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8976546731202594536, guid: e052507120537a048b9cc3e91fd9ac69,
         type: 3}
@@ -42332,6 +42362,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2018586881 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2849922843687593353, guid: ad8afd04343e110438bbff6d504ee65e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1374770970}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2018586882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018586881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d14ef48c49bdfd47a1f61415143c902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2020204119
 GameObject:
   m_ObjectHideFlags: 0
@@ -44289,6 +44337,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2134566332 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2849922843687593353, guid: ad8afd04343e110438bbff6d504ee65e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1370840724}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2134566333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134566332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cba152bb9314aa348925cf8107fe57d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2137891497
 GameObject:
   m_ObjectHideFlags: 0
@@ -44574,6 +44640,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Troll1
       objectReference: {fileID: 0}
+    - target: {fileID: 2849922843687593353, guid: ad8afd04343e110438bbff6d504ee65e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Troll
+      objectReference: {fileID: 0}
     - target: {fileID: 2849922843687593356, guid: ad8afd04343e110438bbff6d504ee65e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44639,5 +44710,6 @@ PrefabInstance:
       propertyPath: walkLeft
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114720446423266532, guid: ad8afd04343e110438bbff6d504ee65e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ad8afd04343e110438bbff6d504ee65e, type: 3}

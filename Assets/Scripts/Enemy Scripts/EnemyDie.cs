@@ -16,6 +16,6 @@ public class EnemyDie : MonoBehaviour
     {
         anim.SetBool("Die", true);
         transform.gameObject.tag = "Untagged";
-        Destroy(gameObject, 1.25f);
+        Destroy(gameObject);
     }
 }

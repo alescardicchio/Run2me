@@ -11,9 +11,9 @@ public class GameplayController : MonoBehaviour
     private Text lifeText;
     //public int score;
     //public int lifeScore;
-    
     public GameObject GameOverUI;
     public GameObject TouchscreenUI;
+    public GameObject Player;
 
     void Awake() {
         makeInstance();
@@ -66,11 +66,12 @@ public class GameplayController : MonoBehaviour
     }
 
     IEnumerator playerDied() {
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(.96f);
         // Non abbiamo più vite, game over :
         if(GameManager.instance.lifeScore == 0) {
             FindObjectOfType<AudioManager>().Play("GameOver");
             GameOverUI.SetActive(true);
+            Player.SetActive(false);
             TouchscreenUI.SetActive(false);
         } else {
             // Il player e' morto ma ha comunque delle vite rimanenti :

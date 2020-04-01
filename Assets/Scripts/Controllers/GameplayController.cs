@@ -20,7 +20,7 @@ public class GameplayController : MonoBehaviour
         scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
         lifeText = GameObject.Find("LifeText").GetComponent<Text>();
     }
-
+    
     void OnEnable() {
         SceneManager.sceneLoaded += levelFinishedLoading;
     }

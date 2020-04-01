@@ -40,7 +40,7 @@ public class GreenZMovement : MonoBehaviour
 
     IEnumerator changeDirection()
     {
-        yield return new WaitForSeconds(14f);    // Attende un tempo pari a 3 secondi.
+        yield return new WaitForSeconds(6f);    // Attende un tempo pari a 3 secondi.
         walkLeft = !walkLeft;   // Cambia direzione.
         StartCoroutine(changeDirection());
     }

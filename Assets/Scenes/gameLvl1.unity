@@ -8707,7 +8707,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2054268335780403950}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2054268335780403951}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f45ac26702e98749b36204b49e03edf, type: 3}
@@ -15987,10 +15987,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e3a10c192e95024eafde04f8cb604e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
-  lifeScore: 0
   GameOverUI: {fileID: 112523519}
   TouchscreenUI: {fileID: 721509890}
+  Player: {fileID: 2054268335780403951}
 --- !u!4 &1259891434
 Transform:
   m_ObjectHideFlags: 0
@@ -29191,12 +29190,12 @@ PrefabInstance:
     - target: {fileID: 2054268336341432393, guid: 38de1f3eae05a484d8f555fd09ef576d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 127.53
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 2054268336341432393, guid: 38de1f3eae05a484d8f555fd09ef576d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.21
+      value: -1.2
       objectReference: {fileID: 0}
     - target: {fileID: 2054268336341432393, guid: 38de1f3eae05a484d8f555fd09ef576d,
         type: 3}
@@ -29255,6 +29254,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38de1f3eae05a484d8f555fd09ef576d, type: 3}
+--- !u!1 &2054268335780403951 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2054268336341432433, guid: 38de1f3eae05a484d8f555fd09ef576d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2054268335780403950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2439654733007551314
 PrefabInstance:
   m_ObjectHideFlags: 0

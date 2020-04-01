@@ -14,29 +14,14 @@ public class PlayerShoot : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void Update() {
-        /*if(Input.GetButtonDown("Fire1")) {
-            anim.SetBool("Shoot", true);    
-            StartCoroutine(ExecuteAfterTime(0.03f));
-        } else {
-            anim.SetBool("Shoot", false);
-        }*/
-    }
-
     public void playerShoot(bool shooting) {
         if(shooting) {
             Instantiate(bullet, firePoint.position, firePoint.rotation);
             FindObjectOfType<AudioManager>().Play("Shoot");
             anim.SetBool("Shoot", true);    
-            //StartCoroutine(ExecuteAfterTime(0.03f));
         }
         else {
             anim.SetBool("Shoot", false);
         }
     }
-
-    /*IEnumerator ExecuteAfterTime(float time) {
-        yield return new WaitForSeconds(time);
-        playerShoot(shooting);
-    }*/
 }

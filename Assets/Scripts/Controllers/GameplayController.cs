@@ -9,8 +9,8 @@ public class GameplayController : MonoBehaviour
     public static GameplayController instance;
     private Text scoreText;
     private Text lifeText;
-    public int score;
-    public int lifeScore;
+    //public int score;
+    //public int lifeScore;
     
     public GameObject GameOverUI;
     public GameObject TouchscreenUI;
@@ -30,18 +30,20 @@ public class GameplayController : MonoBehaviour
     }
 
     void levelFinishedLoading(Scene scene, LoadSceneMode mode) {
-        if(scene.name != "MainMenu") {  // Se la scena non è il menu iniziale ci troviamo in uno dei livelli del gioco.
-            if(!GameManager.instance.playerDied_GameRestarted) { 
-                // E' il primo avvio del gioco e ci troviamo nel livello iniziale, il giocatore avrà 0 diamanti e 3 vite.
-                score = 0;
-                lifeScore = 3;
-            } else {    // Il player e' morto almeno una volta
-                score = GameManager.instance.score;
-                lifeScore = GameManager.instance.lifeScore;
-            }
-            scoreText.text = score.ToString();
-            lifeText.text = lifeScore.ToString();
+        if(!GameManager.instance.playerDied_GameRestarted && scene.name == "gameLvl1") { 
+            // E' il primo avvio del gioco e ci troviamo nel livello iniziale, il giocatore avrà 0 diamanti e 3 vite.
+            GameManager.instance.score = 0;
+            GameManager.instance.lifeScore = 3;
         }
+        /*
+        else { 
+            // Il player e' morto almeno una volta
+            score = GameManager.instance.score;
+            lifeScore = GameManager.instance.lifeScore;
+        }
+        */
+        scoreText.text = GameManager.instance.score.ToString();
+        lifeText.text = GameManager.instance.lifeScore.ToString();
     }
     
     private void makeInstance() {
@@ -51,14 +53,14 @@ public class GameplayController : MonoBehaviour
     }
 
     public void incrementScore() {
-        score++;
-        scoreText.text = score.ToString();
+        GameManager.instance.score++;
+        scoreText.text = GameManager.instance.score.ToString();
     }
 
     public void decrementLife() {
-        lifeScore--;
-        if (lifeScore >= 0) {
-            lifeText.text = lifeScore.ToString();
+        GameManager.instance.lifeScore--;
+        if (GameManager.instance.lifeScore >= 0) {
+            lifeText.text = GameManager.instance.lifeScore.ToString();
         }
         StartCoroutine(playerDied());
     }
@@ -66,8 +68,7 @@ public class GameplayController : MonoBehaviour
     IEnumerator playerDied() {
         yield return new WaitForSeconds(1.2f);
         // Non abbiamo più vite, game over :
-        if(lifeScore == 0) {
-            // => Si potrebbe inserire anche un audio 'GameOver' 
+        if(GameManager.instance.lifeScore == 0) {
             FindObjectOfType<AudioManager>().Play("GameOver");
             GameOverUI.SetActive(true);
             TouchscreenUI.SetActive(false);
@@ -75,7 +76,7 @@ public class GameplayController : MonoBehaviour
             // Il player e' morto ma ha comunque delle vite rimanenti :
             GameManager.instance.playerDied_GameRestarted = true;
             GameManager.instance.score = 0;
-            GameManager.instance.lifeScore = lifeScore;
+            //GameManager.instance.lifeScore = lifeScore;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
        }
     }

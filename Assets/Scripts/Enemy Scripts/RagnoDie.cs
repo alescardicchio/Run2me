@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyDie : MonoBehaviour
+public class RagnoDie : MonoBehaviour
 {
     public void Die()
     {

@@ -135,3 +135,4 @@ MonoBehaviour:
   rigidbody: {fileID: 6693630866246039887}
   impactEffect: {fileID: 3264330939820869713, guid: cde85c771b137de43b438ab0ac5a1a4a,
     type: 3}
+  AttackDamage: 50

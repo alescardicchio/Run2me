@@ -8,6 +8,7 @@ public class BulletMovement : MonoBehaviour
     public float speed = 20f;
     public Rigidbody2D rigidbody;
     public GameObject impactEffect;
+    public int AttackDamage = 50;
 
     void Start() {
         rigidbody.velocity = transform.right * speed;
@@ -15,7 +16,8 @@ public class BulletMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D target) {
         if(target.tag == "Enemy") {
-            target.GetComponent<EnemyDie>().Die();
+            //target.GetComponent<EnemyDie>().Die();
+            target.GetComponent<OtherEnemiesDie>().TakeDamage(AttackDamage);
         }
         if(target.tag == "Troll")
         {

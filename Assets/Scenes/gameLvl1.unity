@@ -17173,7 +17173,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2054268335780403952}
         m_MethodName: Attack
         m_Mode: 1
         m_Arguments:

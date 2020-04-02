@@ -13,12 +13,6 @@ public class PlayerAttack : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void Update() {
-        if(Input.GetKeyDown(KeyCode.Space)) {
-            Attack();
-        }    
-    }
-
     public void Attack() {
 
         // Avvia l'animazione
@@ -29,7 +23,6 @@ public class PlayerAttack : MonoBehaviour
         foreach (var enemy in hitEnemies) {
             enemy.GetComponent<EnemyDie>().Die();
         }
-
     }
 
     void OnDrawGizmosSelected() {

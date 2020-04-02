@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Exit
   - Troll
+  - Gun
   layers:
   - Default
   - TransparentFX

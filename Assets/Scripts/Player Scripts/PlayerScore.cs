@@ -8,6 +8,8 @@ public class PlayerScore : MonoBehaviour
     public bool isAlive;
     private Rigidbody2D playerBody;
     private Animator anim;
+    public GameObject AttackUI;
+    public GameObject ShootUI;
 
     void Awake() {
         anim = GetComponent<Animator>();
@@ -34,6 +36,14 @@ public class PlayerScore : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Diamante");
             target.gameObject.SetActive(false); // Quando il player 'tocca' il diamante, questo viene rimosso dalla scena.
         }
+
+        // Se il player è a contatto con un' arma:
+        if (target.tag == "Gun") {
+            AttackUI.SetActive(false);
+            ShootUI.SetActive(true);
+            target.gameObject.SetActive(false);
+        }
+
         //Se il player è entrato a contatto con un nemico:
         if(target.tag == "Enemy" || target.tag == "Troll") {
             anim.SetTrigger("Dead");

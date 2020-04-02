@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4386294392328338277}
   - component: {fileID: 4386294392328338276}
   - component: {fileID: 114602141228411780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ragno
   m_TagString: Enemy
   m_Icon: {fileID: 0}

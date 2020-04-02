@@ -5,7 +5,7 @@ using UnityEngine;
 public class OtherEnemiesDie : MonoBehaviour
 {
 
-    public static int maxHealth = 100;
+    public int maxHealth = 100;
     public int currentHealth;
     
     public HealthBar healthBar;
@@ -17,12 +17,11 @@ public class OtherEnemiesDie : MonoBehaviour
 
     public void TakeDamage(int damage) {
         
-        Debug.Log("Health prima:"+currentHealth);
-        Debug.Log("Damage taken: "+damage);
+        Debug.Log("Danno preso: "+damage);
 
         currentHealth -= damage;
 
-        Debug.Log("Health dopo: "+currentHealth);
+        Debug.Log("Salute dopo: "+currentHealth);
 
         healthBar.SetHealth(currentHealth);
 
@@ -34,7 +33,7 @@ public class OtherEnemiesDie : MonoBehaviour
     private void Die() {
 
         // QUI SI POTREBBE AGGIUNGERE L'ANIMAZIONE PER LA MORTE DEL NEMICO..
-        
+        Debug.Log("Enemy destroyed!");
         Destroy(gameObject);
     }
 }

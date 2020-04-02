@@ -15,6 +15,7 @@ public class PlayerShoot : MonoBehaviour
 
     public void playerShoot(bool shooting) {
         if(shooting) {
+            Debug.Log("Proiettile partito.");
             Instantiate(bullet, firePoint.position, firePoint.rotation);
             FindObjectOfType<AudioManager>().Play("Shoot");
             anim.SetBool("Shoot", true);    

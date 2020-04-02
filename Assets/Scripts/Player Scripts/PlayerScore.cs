@@ -46,7 +46,7 @@ public class PlayerScore : MonoBehaviour
 
         //Se il player è entrato a contatto con un nemico:
         if(target.tag == "Enemy" || target.tag == "Troll") {
-            anim.SetBool("Dead", true);
+            anim.SetTrigger("Dead");
             if(isAlive) {
                 isAlive = false;    // Se il player tocca il nemico, muore.
                 target.gameObject.SetActive(false);

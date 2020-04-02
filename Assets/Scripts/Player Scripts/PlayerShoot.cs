@@ -8,8 +8,7 @@ public class PlayerShoot : MonoBehaviour
     public Transform firePoint;
     public GameObject bullet;
     private Animator anim;
-    public Button fire;
-
+    
     void Start() {
         anim = GetComponent<Animator>();
     }

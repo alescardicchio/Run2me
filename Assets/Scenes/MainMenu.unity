@@ -1832,6 +1832,7 @@ MonoBehaviour:
   score: 0
   lifeScore: 0
   playerDied_GameRestarted: 0
+  tutorialDone: 0
 --- !u!4 &1249450747
 Transform:
   m_ObjectHideFlags: 0
@@ -1853,6 +1854,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2439654733865111212, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2439654733865111212, guid: 649e27d84fc665f40b439705ffd7987b,
         type: 3}
       propertyPath: mixerGroup
@@ -1877,6 +1883,26 @@ PrefabInstance:
     - target: {fileID: 2439654733865111212, guid: 649e27d84fc665f40b439705ffd7987b,
         type: 3}
       propertyPath: sounds.Array.data[2].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439654733865111212, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: sounds.Array.data[4].name
+      value: OhNo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439654733865111212, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: sounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a2b7ef76abe27a4bba9270880680276, type: 3}
+    - target: {fileID: 2439654733865111212, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: sounds.Array.data[4].volume
+      value: 0.824
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439654733865111212, guid: 649e27d84fc665f40b439705ffd7987b,
+        type: 3}
+      propertyPath: sounds.Array.data[4].pitch
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5381422749062527152, guid: 649e27d84fc665f40b439705ffd7987b,

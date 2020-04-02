@@ -21,7 +21,8 @@ public class PlayerScore : MonoBehaviour
         // Se il player esce fuori dalla mappa, muore:
         if(transform.position.y <= -5f) {
             if(isAlive) {
-                isAlive = false;               
+                isAlive = false;
+                FindObjectOfType<AudioManager>().Play("OhNo");
                 GameplayController.instance.decrementLife();
                 transform.position = new Vector3(0, 100000, 0);
             }

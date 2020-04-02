@@ -69,6 +69,7 @@ public class GameplayController : MonoBehaviour
         yield return new WaitForSeconds(.96f);
         // Non abbiamo più vite, game over :
         if(GameManager.instance.lifeScore == 0) {
+            FindObjectOfType<AudioManager>().StopPlaying("MusicaSottofondo");
             FindObjectOfType<AudioManager>().Play("GameOver");
             GameOverUI.SetActive(true);
             Player.SetActive(false);

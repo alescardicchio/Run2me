@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         playerMove();
         playerJump();
+        playerSlide();
     }
 
     private void playerMove() {
@@ -77,6 +78,13 @@ public class PlayerMovement : MonoBehaviour
                 isGrounded = false; // Stiamo per saltare di nuovo, ciò significa che non siamo atterrati a questo punto.     
                 playerBody.AddForce(new Vector2(0, jumpForce));
             }
+        }
+    }
+
+    private void playerSlide() {
+        float verticalMove = joystick.Vertical;
+        if(verticalMove < -.7f) {
+            anim.SetTrigger("Slide");
         }
     }
 

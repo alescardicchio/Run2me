@@ -20,7 +20,7 @@ public class GameplayController : MonoBehaviour
         scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
         lifeText = GameObject.Find("LifeText").GetComponent<Text>();
     }
-    
+    /*
     void OnEnable() {
         SceneManager.sceneLoaded += levelFinishedLoading;
     }
@@ -41,11 +41,11 @@ public class GameplayController : MonoBehaviour
             score = GameManager.instance.score;
             lifeScore = GameManager.instance.lifeScore;
         }
-        */
+        *//*
         scoreText.text = GameManager.instance.score.ToString();
         lifeText.text = GameManager.instance.lifeScore.ToString();
     }
-    
+    */
     private void makeInstance() {
         if(instance == null) {
             instance = this;

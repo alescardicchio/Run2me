@@ -10,6 +10,7 @@ TagManager:
   - Exit
   - Troll
   - Gun
+  - EnemyX
   layers:
   - Default
   - TransparentFX

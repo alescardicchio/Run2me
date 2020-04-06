@@ -15,11 +15,13 @@ public class BulletMovement : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D target) {
-        if(target.tag == "Enemy") {
-            Debug.Log("Proiettile: 'Nemico colpito'");
+        if(target.tag == "EnemyX") {
             target.GetComponent<OtherEnemiesDie>().TakeDamage(AttackDamage);
         }
-        else if(target.tag == "Troll")
+        if(target.tag == "Enemy") {
+            target.GetComponent<RagnoDie>().Die();
+        }
+        if(target.tag == "Troll")
         {
             target.GetComponent<TrollDie>().Die();
         }

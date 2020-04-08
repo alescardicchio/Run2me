@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ImpactEffectDestroyed : MonoBehaviour
+public class DeathEffectDestroyed : MonoBehaviour
 {
-
     public float seconds = 1f;
 
      void Start() {

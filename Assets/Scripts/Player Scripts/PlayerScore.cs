@@ -46,20 +46,29 @@ public class PlayerScore : MonoBehaviour
         }
 
         //Se il player è entrato a contatto con un nemico:
-        if(target.tag == "Enemy" || target.tag == "Troll") {
-            anim.SetTrigger("Dead");
+        if(target.tag == "Enemy") {  // || target.tag == "Troll") {
+            /*anim.SetTrigger("Dead");
             if(isAlive) {
                 isAlive = false;    // Se il player tocca il nemico, muore.
                 target.gameObject.SetActive(false);
                 GameplayController.instance.decrementLife();
                 //transform.position = new Vector3(0, 100000, 0);
-            }
+            }*/
+            PlayerDie();
         }
         // Se il player ha raggiunto l'uscita.
         if(target.tag == "Exit") {
             //Time.timeScale = 0f;
             //GameManager.instance.score = GameplayController.instance.score;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+
+    public void PlayerDie() {
+        anim.SetTrigger("Dead");
+        if(isAlive) {
+            isAlive = false;    // Se il player tocca il nemico, muore.
+            GameplayController.instance.decrementLife();
         }
     }
 }

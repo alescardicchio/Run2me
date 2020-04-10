@@ -15,13 +15,9 @@ public class BulletMovement : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D target) {
-        if(target.tag == "Enemy") {
+        if(target.tag == "Enemy" || target.tag == "Troll") {
             Debug.Log("Proiettile: 'Nemico colpito'");
             target.GetComponent<OtherEnemiesDie>().TakeDamage(AttackDamage);
-        }
-        else if(target.tag == "Troll")
-        {
-            target.GetComponent<TrollDie>().Die();
         }
 
         Instantiate(impactEffect, transform.position, transform.rotation);

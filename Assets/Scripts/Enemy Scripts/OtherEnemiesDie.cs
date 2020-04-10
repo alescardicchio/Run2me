@@ -9,8 +9,12 @@ public class OtherEnemiesDie : MonoBehaviour
     public int currentHealth;
     
     public HealthBar healthBar;
+    private Animator animator;
+
+    public GameObject deathEffect;
 
     void Start() {
+        animator = GetComponent<Animator>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
@@ -18,6 +22,8 @@ public class OtherEnemiesDie : MonoBehaviour
     public void TakeDamage(int damage) {
         
         Debug.Log("Danno preso: "+damage);
+
+        animator.SetTrigger("Hurt");
 
         currentHealth -= damage;
 
@@ -34,6 +40,13 @@ public class OtherEnemiesDie : MonoBehaviour
 
         // QUI SI POTREBBE AGGIUNGERE L'ANIMAZIONE PER LA MORTE DEL NEMICO..
         Debug.Log("Enemy destroyed!");
+        GameObject deathEff = Instantiate(deathEffect, transform.position, Quaternion.identity);
+        if(gameObject.tag == "Troll") {
+            deathEff.transform.localScale = new Vector3(5.6f, 5.6f, 1f);
+        }
+        else if(gameObject.tag == "Enemy") {
+            deathEff.transform.localScale = new Vector3(4f, 4f, 1f);
+        }
         Destroy(gameObject);
     }
 }

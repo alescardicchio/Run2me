@@ -41,7 +41,11 @@ public class TrollMovement : MonoBehaviour
     IEnumerator changeDirection()
     {
         yield return new WaitForSeconds(3f);    // Attende un tempo pari a 3 secondi.
-        walkLeft = !walkLeft;   // Cambia direzione.
+        Flip();   // Cambia direzione.
         StartCoroutine(changeDirection());
+    }
+
+    public void Flip() {
+        walkLeft = !walkLeft;
     }
 }

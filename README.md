@@ -25,7 +25,7 @@ Morte del player.
 #### Obiettivo 3
 Narrazione introduttiva della storia.
 
-#### Obiettivo 4
+#### Obiettivo 4 [✔]
 Cambiare la musichetta ad ogni livello.
 
 #### Obiettivo 5  [✔]

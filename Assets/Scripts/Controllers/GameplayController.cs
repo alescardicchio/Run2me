@@ -9,8 +9,6 @@ public class GameplayController : MonoBehaviour
     public static GameplayController instance;
     private Text scoreText;
     private Text lifeText;
-    //public int score;
-    //public int lifeScore;
     public GameObject GameOverUI;
     public GameObject TouchscreenUI;
     public GameObject Player;
@@ -35,13 +33,6 @@ public class GameplayController : MonoBehaviour
             GameManager.instance.score = 0;
             GameManager.instance.lifeScore = 3;
         }
-        /*
-        else { 
-            // Il player e' morto almeno una volta
-            score = GameManager.instance.score;
-            lifeScore = GameManager.instance.lifeScore;
-        }
-        */
         scoreText.text = GameManager.instance.score.ToString();
         lifeText.text = GameManager.instance.lifeScore.ToString();
     }
@@ -78,7 +69,6 @@ public class GameplayController : MonoBehaviour
             // Il player e' morto ma ha comunque delle vite rimanenti :
             GameManager.instance.playerDied_GameRestarted = true;
             GameManager.instance.score = 0;
-            //GameManager.instance.lifeScore = lifeScore;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
        }
     }

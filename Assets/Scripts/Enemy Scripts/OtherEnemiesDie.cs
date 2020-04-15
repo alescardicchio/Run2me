@@ -46,6 +46,7 @@ public class OtherEnemiesDie : MonoBehaviour
         }
         else if(gameObject.tag == "Enemy") {
             deathEff.transform.localScale = new Vector3(4f, 4f, 1f);
+            GameManager.instance.spiderScore++;
         }
         Destroy(gameObject);
     }

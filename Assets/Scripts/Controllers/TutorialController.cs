@@ -36,7 +36,6 @@ public class TutorialController : MonoBehaviour
         touchscreenMenu.SetActive(true);
         scoreMenu.SetActive(true);
         tutorialMenu.SetActive(false);
-        TimerController.instance.BeginTimer();
     }
 
 }

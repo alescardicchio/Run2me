@@ -21,9 +21,7 @@ public class TimerController : MonoBehaviour
 
     public void BeginTimer() {
         timerGoing = true;
-        Debug.Log("Timer partito!");
         elapsedTime = 0f;
-        
         StartCoroutine(UpdateTimer());
     }
 
@@ -33,7 +31,6 @@ public class TimerController : MonoBehaviour
 
     private IEnumerator UpdateTimer() {
         while(timerGoing) {
-
             elapsedTime += Time.deltaTime;
             timePlaying = System.TimeSpan.FromSeconds(elapsedTime);
             timeCounter.text = timePlaying.ToString("mm':'ss'.'ff");

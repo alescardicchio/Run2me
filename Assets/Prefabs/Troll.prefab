@@ -28,7 +28,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2849922843687593356}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2849922843687593353
 GameObject:
@@ -64,8 +64,8 @@ Transform:
   m_LocalPosition: {x: -2.031662, y: 0.5872643, z: 9.786416}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.3}
   m_Children:
-  - {fileID: 141231767}
   - {fileID: 6767838979252662508}
+  - {fileID: 141231767}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -170,9 +170,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17, y: -1.1453452}
+  m_Offset: {x: -0.17826974, y: -1.1453452}
   serializedVersion: 2
-  m_Radius: 2.4
+  m_Radius: 2.35
 --- !u!114 &2849922843687593392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,7 +267,7 @@ PrefabInstance:
     - target: {fileID: 5642950441363152914, guid: e6a14cf394f8e7d41bc2ebea485ccdba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5642950441363152914, guid: e6a14cf394f8e7d41bc2ebea485ccdba,
         type: 3}

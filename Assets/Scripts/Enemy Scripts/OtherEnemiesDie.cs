@@ -42,6 +42,7 @@ public class OtherEnemiesDie : MonoBehaviour
         Debug.Log("Enemy destroyed!");
         GameObject deathEff = Instantiate(deathEffect, transform.position, Quaternion.identity);
         if(gameObject.tag == "Troll") {
+            GameManager.instance.trollScore++;
             deathEff.transform.localScale = new Vector3(5.6f, 5.6f, 1f);
         }
         else if(gameObject.tag == "Enemy") {

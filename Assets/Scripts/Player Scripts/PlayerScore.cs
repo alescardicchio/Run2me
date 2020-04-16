@@ -47,13 +47,20 @@ public class PlayerScore : MonoBehaviour
         }
 
         //Se il player è entrato a contatto con un nemico:
-        if(target.tag == "Enemy") {  // || target.tag == "Troll") {
+        if(target.tag == "Enemy") {
             PlayerDie();
         }
+
+        // Se il player calpesta una delle prime delle piattaforme.
+        if(target.tag == "Ground_Timer") {
+            TimerController.instance.BeginTimer();
+            Debug.Log("Timer partito!");
+        }
+
         // Se il player ha raggiunto l'uscita.
         if(target.tag == "Exit") {
-            LevelCompleteUI.SetActive(true);
             TimerController.instance.EndTimer();
+            LevelCompleteUI.SetActive(true);
             GameObject.Find("Canvas/Touchscreen").SetActive(false);
             GameObject.Find("Scores").SetActive(false);
             LevelCompleteUI.GetComponent<LevelController>().ShowLevelDialog();

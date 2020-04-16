@@ -69,6 +69,9 @@ public class GameplayController : MonoBehaviour
             // Il player e' morto ma ha comunque delle vite rimanenti :
             GameManager.instance.playerDied_GameRestarted = true;
             GameManager.instance.score = 0;
+            GameManager.instance.spiderScore = 0;
+            GameManager.instance.trollScore = 0;
+            GameManager.instance.winterScore = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
        }
     }

@@ -11,7 +11,10 @@ public class LevelController : MonoBehaviour
     public Text enemyText;
     public GameObject[] stars;
     public GameObject[] enemies;
- 
+    
+    public GameObject LevelMapUI;
+    private int starsCollected;
+
     public void ShowLevelDialog() {
 
         diamondText.text = GameManager.instance.score.ToString();
@@ -66,20 +69,27 @@ public class LevelController : MonoBehaviour
             stars[0].SetActive(true);
             stars[1].SetActive(false);
             stars[2].SetActive(false);
+            starsCollected = 1;
         }
         if(actualScore > maxScore/3 && actualScore <= maxScore/1.5) {
             stars[0].SetActive(false);
             stars[1].SetActive(true);
             stars[2].SetActive(false);
+            starsCollected = 2;
         }
         if(actualScore > maxScore/1.5 && actualScore <= maxScore) {
            stars[0].SetActive(false);
            stars[1].SetActive(false);
            stars[2].SetActive(true);
+           starsCollected = 3;
         }
     }
 
-    public void LoadNextLevel() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    public void NextButton() {
+
+        this.gameObject.SetActive(false);
+        LevelMapUI.SetActive(true);
+        Debug.Log("starsCollected value is " + starsCollected);
+        LevelMapUI.GetComponent<LevelMapController>().InitializeStars(starsCollected);
     }
 }

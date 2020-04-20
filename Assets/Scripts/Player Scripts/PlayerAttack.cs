@@ -7,7 +7,7 @@ public class PlayerAttack : MonoBehaviour
     private Animator anim;
     public Transform attackPoint;
     public float attackRange = 0.5f;
-    public int AttackDamage = 50;
+    public int AttackDamage = 100;
     public LayerMask enemyLayers;
 
     void Start() {

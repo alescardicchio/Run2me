@@ -24,13 +24,13 @@ public class LevelMapController : MonoBehaviour
 
     public IEnumerator UnlockArrow()
     {
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(3.4f);
         arrowsAnim.SetTrigger("SetArrow1");
         StartCoroutine(UnlockNextLevel());
     }
     
     public IEnumerator UnlockNextLevel() {
-        yield return new WaitForSeconds(1.5f);    
+        yield return new WaitForSeconds(1.3f);    
         sndLvlAnim.SetTrigger("UnlockLvl2");
     }
 

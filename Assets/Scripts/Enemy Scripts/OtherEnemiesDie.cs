@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class OtherEnemiesDie : MonoBehaviour
 {
-
     public int maxHealth = 100;
     public int currentHealth;
     
     public HealthBar healthBar;
     private Animator animator;
-
     public GameObject deathEffect;
 
     void Start() {
@@ -38,17 +36,19 @@ public class OtherEnemiesDie : MonoBehaviour
 
     private void Die() {
 
-        // QUI SI POTREBBE AGGIUNGERE L'ANIMAZIONE PER LA MORTE DEL NEMICO..
-        Debug.Log("Enemy destroyed!");
-        GameObject deathEff = Instantiate(deathEffect, transform.position, Quaternion.identity);
         if(gameObject.tag == "Troll") {
             GameManager.instance.trollScore++;
+            GameObject deathEff = Instantiate(deathEffect, transform.position, Quaternion.identity);
             deathEff.transform.localScale = new Vector3(5.6f, 5.6f, 1f);
         }
         else if(gameObject.tag == "Enemy") {
-            deathEff.transform.localScale = new Vector3(4f, 4f, 1f);
+            if(GameObject.Find("Canvas/Touchscreen/Shoot").activeSelf) {
+                GameObject deathEff = Instantiate(deathEffect, transform.position, Quaternion.identity);
+                deathEff.transform.localScale = new Vector3(4f, 4f, 1f);
+            }    
             GameManager.instance.spiderScore++;
         }
+        
         Destroy(gameObject);
     }
 }

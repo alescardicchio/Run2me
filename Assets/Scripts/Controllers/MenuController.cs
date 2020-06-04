@@ -7,6 +7,6 @@ public class MenuController : MonoBehaviour
 {
     public void PlayGame() {
         GameManager.instance.playerDied_GameRestarted = false;
-        SceneManager.LoadScene("CharactersMenu");
+        SceneManager.LoadScene("gameLvl1");
     }
 }

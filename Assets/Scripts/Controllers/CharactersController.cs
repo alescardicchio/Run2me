@@ -14,10 +14,11 @@ public class CharactersController : MonoBehaviour
         SceneManager.LoadScene("gameLvl1");     
     }
 
+ 
+
     public void playWithGirl() {
         boy.SetActive(false);
         girl.SetActive(true);
         SceneManager.LoadScene("gameLvl1");
     }
-
 }

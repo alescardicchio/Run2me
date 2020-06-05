@@ -9,4 +9,8 @@ public class MenuController : MonoBehaviour
         GameManager.instance.playerDied_GameRestarted = false;
         SceneManager.LoadScene("gameLvl1");
     }
+
+    public void ShowLeaderBoard() {
+        SceneManager.LoadScene("Scoreboard");
+    }
 }

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 2059819567}
   m_Layer: 8
   m_Name: Ragno
-  m_TagString: Enemy
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -181,6 +181,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 2136715711}
+  deathEffect: {fileID: 0}
 --- !u!114 &2059819567
 MonoBehaviour:
   m_ObjectHideFlags: 0

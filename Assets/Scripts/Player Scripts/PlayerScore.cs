@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
 public class PlayerScore : MonoBehaviour
@@ -11,6 +12,10 @@ public class PlayerScore : MonoBehaviour
     public GameObject AttackUI;
     public GameObject ShootUI;
     public GameObject LevelCompleteUI;
+    
+    string userEmail = "mela.danza@hotmail.it";
+    string userName = "mela";
+    string rootURL = "https://runtome.azurewebsites.net/"; //Path where php files are located
 
     void Awake() {
         anim = GetComponent<Animator>();
@@ -65,6 +70,14 @@ public class PlayerScore : MonoBehaviour
             GameObject.Find("Scores").SetActive(false);
             LevelCompleteUI.GetComponent<LevelController>().ShowLevelDialog();
         }
+
+        // Se il player è nell'ultimo livello ed ha raggiunto l'uscita.
+        if(target.tag == "EndGame") {
+            GameObject.Find("Canvas/Touchscreen").SetActive(false);
+            GameObject.Find("Scores").SetActive(false);
+            LevelCompleteUI.GetComponent<LevelController>().ShowLevelDialog();
+            StartCoroutine(SubmitScore(GameManager.instance.globalScore));
+        }
     }
 
     public void PlayerDie() {
@@ -72,6 +85,40 @@ public class PlayerScore : MonoBehaviour
         if(isAlive) {
             isAlive = false;    // Se il player tocca il nemico, muore.
             GameplayController.instance.decrementLife();
+        }
+    }
+
+
+        IEnumerator SubmitScore(int score_value)
+    {
+        Debug.Log("Submitting Score...");
+
+        WWWForm form = new WWWForm();
+        form.AddField("email", userEmail);
+        form.AddField("username", userName);
+        form.AddField("score", score_value);
+
+        using (UnityWebRequest www = UnityWebRequest.Post(rootURL + "score_submit.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.isNetworkError)
+            {
+                print(www.error);
+            }
+            else
+            {
+                string responseText = www.downloadHandler.text;
+
+                if (responseText.StartsWith("Success"))
+                {
+                    Debug.Log("New Score Submitted!");
+                }
+                else
+                {
+                    print(responseText);
+                }
+            }
         }
     }
 }

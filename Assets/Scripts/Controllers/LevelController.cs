@@ -15,6 +15,11 @@ public class LevelController : MonoBehaviour
     public GameObject LevelMapUI;
     private int starsCollected;
 
+
+    public void GoToMenu() {
+        SceneManager.LoadScene("MainMenu");
+    }
+
     public void ShowLevelDialog() {
 
         diamondText.text = GameManager.instance.score.ToString();
@@ -40,6 +45,8 @@ public class LevelController : MonoBehaviour
         enemyText.text = GameManager.instance.spiderScore.ToString();
         scoreText.text = (10*(GameManager.instance.lifeScore + GameManager.instance.score + GameManager.instance.spiderScore)).ToString();
 
+        GameManager.instance.globalScore += int.Parse(scoreText.text);
+
         SetStars(int.Parse(scoreText.text), 120);
     }
 
@@ -51,6 +58,8 @@ public class LevelController : MonoBehaviour
         enemyText.text = GameManager.instance.trollScore.ToString();
         scoreText.text = (10*(GameManager.instance.lifeScore + GameManager.instance.score + GameManager.instance.trollScore)).ToString();
 
+        GameManager.instance.globalScore += int.Parse(scoreText.text);
+
         SetStars(int.Parse(scoreText.text), 220);
     }
 
@@ -58,10 +67,14 @@ public class LevelController : MonoBehaviour
         enemies[0].SetActive(false);
         enemies[1].SetActive(false);
         enemies[2].SetActive(true);
+        
         enemyText.text = GameManager.instance.winterScore.ToString();
         scoreText.text = (10*(GameManager.instance.lifeScore + GameManager.instance.score + GameManager.instance.winterScore)).ToString();
-    }
+        
+        GameManager.instance.globalScore += int.Parse(scoreText.text);
 
+        SetStars(int.Parse(scoreText.text), 320);
+    }
 
     private void SetStars(int actualScore, int maxScore) {
 
@@ -85,11 +98,19 @@ public class LevelController : MonoBehaviour
         }
     }
 
-    public void NextButton() {
+    public void NextButtonLvl1() {
 
         this.gameObject.SetActive(false);
         LevelMapUI.SetActive(true);
         Debug.Log("starsCollected value is " + starsCollected);
-        LevelMapUI.GetComponent<LevelMapController>().InitializeStars(starsCollected);
+        LevelMapUI.GetComponent<FirstLevelMapController>().InitializeStars(starsCollected);
+    }
+
+    public void NextButtonLvl2() {
+
+        this.gameObject.SetActive(false);
+        LevelMapUI.SetActive(true);
+        Debug.Log("starsCollected value is " + starsCollected);
+        LevelMapUI.GetComponent<SecondLevelMapController>().InitializeStars(starsCollected);
     }
 }

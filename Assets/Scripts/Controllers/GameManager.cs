@@ -6,10 +6,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public int score;
+    public int globalScore;
     public int lifeScore;
     public int spiderScore;
     public int trollScore;
     public int winterScore;
+    public int lvl1Stars;
     public bool playerDied_GameRestarted;
     public bool tutorialDone;
     

@@ -38,17 +38,21 @@ public class OtherEnemiesDie : MonoBehaviour
 
     private void Die() {
 
-        // QUI SI POTREBBE AGGIUNGERE L'ANIMAZIONE PER LA MORTE DEL NEMICO..
         Debug.Log("Enemy destroyed!");
         GameObject deathEff = Instantiate(deathEffect, transform.position, Quaternion.identity);
         if(gameObject.tag == "Troll") {
             GameManager.instance.trollScore++;
             deathEff.transform.localScale = new Vector3(5.6f, 5.6f, 1f);
         }
-        else if(gameObject.tag == "Enemy") {
+        else if(gameObject.tag == "Spider") {
             deathEff.transform.localScale = new Vector3(4f, 4f, 1f);
             GameManager.instance.spiderScore++;
         }
+        else if(gameObject.tag == "Enemy") {
+            GameManager.instance.winterScore++;
+            deathEff.transform.localScale = new Vector3(5.6f, 5.6f, 1f);
+        }
+
         Destroy(gameObject);
     }
 }

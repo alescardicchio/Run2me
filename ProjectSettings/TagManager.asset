@@ -11,6 +11,8 @@ TagManager:
   - Troll
   - Gun
   - Ground_Timer
+  - EndGame
+  - Spider
   layers:
   - Default
   - TransparentFX

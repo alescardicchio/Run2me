@@ -2188,10 +2188,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  globalScore: 0
   lifeScore: 0
   spiderScore: 0
   trollScore: 0
   winterScore: 0
+  lvl1Stars: 0
   playerDied_GameRestarted: 0
   tutorialDone: 0
 --- !u!4 &1249450747

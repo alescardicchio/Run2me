@@ -269,7 +269,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.24
-  m_Text: "\u2022 Alessandro Scardicchio\n\u2022 MariaCarmela Pascale\n\u2022 Michela
+  m_Text: "\u2022 Alessandro Scardicchio\n\u2022 Maria Carmela Pascale\n\u2022 Michela
     Pascale"
 --- !u!222 &281610078
 CanvasRenderer:

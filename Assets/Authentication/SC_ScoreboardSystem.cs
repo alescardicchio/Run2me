@@ -29,8 +29,8 @@ public class SC_ScoreboardSystem : MonoBehaviour
     }
     LeaderboardUser[] leaderboardUsers;
 
-    string userEmail = "mela.danza@hotmail.it";
-    string userName = "mela";
+    string userEmail = "run2me@gmail.com";
+    string userName = "Run2me";
 
     void Start() { 
         StartCoroutine(GetLeaderboard());  

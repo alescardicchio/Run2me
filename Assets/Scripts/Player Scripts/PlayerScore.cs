@@ -12,9 +12,10 @@ public class PlayerScore : MonoBehaviour
     public GameObject AttackUI;
     public GameObject ShootUI;
     public GameObject LevelCompleteUI;
+    public GameObject SubmittingText;
     
-    string userEmail = "mela.danza@hotmail.it";
-    string userName = "mela";
+    string userEmail = "run2me@gmail.com";
+    string userName = "Run2me";
     string rootURL = "https://runtome.azurewebsites.net/"; //Path where php files are located
 
     void Awake() {
@@ -79,6 +80,17 @@ public class PlayerScore : MonoBehaviour
             LevelCompleteUI.GetComponent<LevelController>().ShowLevelDialog();
             StartCoroutine(SubmitScore(GameManager.instance.globalScore));
         }
+    }
+
+    public void loseSubmitScore() {
+        StartCoroutine(SubmitScore(GameManager.instance.globalScore));
+        SubmittingText.SetActive(true);
+        StartCoroutine(Waiting());
+    }
+
+     public IEnumerator Waiting() {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void PlayerDie() {

@@ -75,6 +75,7 @@ public class PlayerScore : MonoBehaviour
         if(target.tag == "EndGame") {
             GameObject.Find("Canvas/Touchscreen").SetActive(false);
             GameObject.Find("Scores").SetActive(false);
+            LevelCompleteUI.SetActive(true);
             LevelCompleteUI.GetComponent<LevelController>().ShowLevelDialog();
             StartCoroutine(SubmitScore(GameManager.instance.globalScore));
         }

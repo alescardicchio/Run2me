@@ -187,10 +187,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  globalScore: 0
   lifeScore: 0
   spiderScore: 0
   trollScore: 0
   winterScore: 0
+  lvl1Stars: 0
   playerDied_GameRestarted: 0
   tutorialDone: 0
 --- !u!4 &268692723
@@ -368,7 +370,7 @@ PrefabInstance:
     - target: {fileID: 5211036147227592549, guid: 1f4d02d391f08994591de8eb11c05b90,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 63
+      value: 136
       objectReference: {fileID: 0}
     - target: {fileID: 5211036147227592549, guid: 1f4d02d391f08994591de8eb11c05b90,
         type: 3}
@@ -782,7 +784,7 @@ PrefabInstance:
     - target: {fileID: 5211036147227592549, guid: 1f4d02d391f08994591de8eb11c05b90,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 203
+      value: 276
       objectReference: {fileID: 0}
     - target: {fileID: 5211036147227592549, guid: 1f4d02d391f08994591de8eb11c05b90,
         type: 3}
@@ -893,7 +895,7 @@ PrefabInstance:
     - target: {fileID: 5211036147227592549, guid: 1f4d02d391f08994591de8eb11c05b90,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -204
+      value: -131
       objectReference: {fileID: 0}
     - target: {fileID: 5211036147227592549, guid: 1f4d02d391f08994591de8eb11c05b90,
         type: 3}
@@ -1228,7 +1230,7 @@ PrefabInstance:
     - target: {fileID: 5211036147227592549, guid: 1f4d02d391f08994591de8eb11c05b90,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -74
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5211036147227592549, guid: 1f4d02d391f08994591de8eb11c05b90,
         type: 3}
@@ -1732,7 +1734,7 @@ PrefabInstance:
     - target: {fileID: 5211036147227592549, guid: 1f4d02d391f08994591de8eb11c05b90,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 335
+      value: 408
       objectReference: {fileID: 0}
     - target: {fileID: 5211036147227592549, guid: 1f4d02d391f08994591de8eb11c05b90,
         type: 3}

@@ -65,6 +65,7 @@ public class GameplayController : MonoBehaviour
             GameOverUI.SetActive(true);
             Player.SetActive(false);
             TouchscreenUI.SetActive(false);
+            GameObject.Find("Scores").SetActive(false);
         } else {
             // Il player e' morto ma ha comunque delle vite rimanenti :
             GameManager.instance.playerDied_GameRestarted = true;

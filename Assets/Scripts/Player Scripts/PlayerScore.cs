@@ -13,6 +13,8 @@ public class PlayerScore : MonoBehaviour
     public GameObject ShootUI;
     public GameObject LevelCompleteUI;
     public GameObject SubmittingText;
+    public GameObject TouchscreenUI;
+    public GameObject ScoresUI;
     
     string userEmail = "run2me@gmail.com";
     string userName = "Run2me";
@@ -67,15 +69,15 @@ public class PlayerScore : MonoBehaviour
         if(target.tag == "Exit") {
             TimerController.instance.EndTimer();
             LevelCompleteUI.SetActive(true);
-            GameObject.Find("Canvas/Touchscreen").SetActive(false);
-            GameObject.Find("Scores").SetActive(false);
+            TouchscreenUI.SetActive(false);
+            ScoresUI.SetActive(false);
             LevelCompleteUI.GetComponent<LevelController>().ShowLevelDialog();
         }
 
         // Se il player è nell'ultimo livello ed ha raggiunto l'uscita.
         if(target.tag == "EndGame") {
-            GameObject.Find("Canvas/Touchscreen").SetActive(false);
-            GameObject.Find("Scores").SetActive(false);
+            TouchscreenUI.SetActive(false);
+            ScoresUI.SetActive(false);
             LevelCompleteUI.SetActive(true);
             LevelCompleteUI.GetComponent<LevelController>().ShowLevelDialog();
             StartCoroutine(SubmitScore(GameManager.instance.globalScore));

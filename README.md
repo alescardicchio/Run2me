@@ -1,52 +1,10 @@
 # Mobile-Computing
-Progetto di Mobile Computing
+Progetto per l'esame di Mobile Computing  A.A. 2019-2020
 
-## NOME DEL GIOCO:  Run to me!
+## Nome del gioco:  Run2me!
 
-### LEVELS
-Tre livelli.
-(Forse il livello finale --> dipende da quanto durerà il video finale)
+### App realizzata da: 
+* [Alessandro Scardicchio](https://github.com/alescardicchio)
+* [Maria Carmela Pascale](https://github.com/MariaCarmelaPascale)
+* [Michela Pascale](https://github.com/MichelaPascale)
 
-### HISTORY
-La ragazza salva il ragazzo [...] 
-
-### BACKGROUNDS
-Desert, WoodLand, WinterLand
-
-## TO IMPLEMENT
-#### Obiettivo 1
-Al termine di ogni livello appare un piccolo menù con introduzione al livello successivo.
-Quando arriva alla fine si interrompe il gioco e deve uscire la schermata di "Passa al prossimo livello, torna indietro ecc...".
-Visualizzare anche le statistiche del livello con tempo di percorrenza, quanti diamanti ha preso, le vite perse ecc.
-
-#### Obiettivo 2  [✔]
-Morte del player.
-
-#### Obiettivo 3
-Narrazione introduttiva della storia.
-
-#### Obiettivo 4 [✔]
-Cambiare la musichetta ad ogni livello.
-
-#### Obiettivo 5  [✔]
-Piattaforme che si muovono.
-
-#### Obiettivo 6
-Attacco del nemico.
-
-#### Obiettivo 7
-Memorizzare dati nel database.
-Nickname è la chiave o creare una chiave randomica.
-Nome, diamanti, score ecc.
-Quindi a ogni fine partita salvare i dati.
-Mostrare gli score di tutti i giocatori del gioco, non solo i miei.
-
-#### Extra 1
-Completamente Touch.
-
-#### Extra 2
-Quando il giocatore tocca un nemico torna indietro e perde una vita.
-
-#### Extra 3 [✔]
-Per usare la pistola devi raccogliere o dei proiettili o un disegno di pistola. 
-Altrimenti prima per poter attaccare hai solamente il pugnale.  
